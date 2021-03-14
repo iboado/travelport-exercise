@@ -1,0 +1,35 @@
+h1 {
+    font-family: Arial;
+    margin: 0 0 0 5px;
+}
+
+select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px 5px 5px 5px;
+    height: auto;
+    margin: 0 0 0 25px;
+    padding: 10px;
+    width: 110px;
+}
+
+button {
+    border: 2px solid #E5E5E5;
+    border-radius: 5px 5px 5px 5px;
+    height: auto;
+    margin: 0 0 15px 12px;
+    padding: 10px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.mySelect {
+	width: 190px;
+	margin: 0 0 0 5px;
+}
+
+.mainContainer {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
