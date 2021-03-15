@@ -10,7 +10,8 @@ const TaskElement = ({ description, id }) => {
   };
   const DeleteTaskButton = GenericButton({
     buttonText: "-",
-    onClickFunction: deleteTask
+    onClickFunction: deleteTask,
+    id: `${id}-button`
   });
   return (
     <div id={id}>

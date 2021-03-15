@@ -16,7 +16,8 @@ const AddTaskForm = () => {
   };
   const AddTaskButton = GenericButton({
     buttonText: "+",
-    onClickFunction: addNewTask
+    onClickFunction: addNewTask,
+    id: `add-button`
   });
 
   return (
