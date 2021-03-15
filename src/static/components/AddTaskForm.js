@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import TasksContext from "../context/TasksContextProvider";
-import genericButton from "./genericButton";
+import GenericButton from "./GenericButton";
 
 const AddTaskForm = () => {
   const [uniqueId, setUniqueId] = useState(1);
@@ -14,7 +14,7 @@ const AddTaskForm = () => {
 
     updateTasks([...tasks, newTaskModel]);
   };
-  const AddTaskButton = genericButton({
+  const AddTaskButton = GenericButton({
     buttonText: "+",
     onClickFunction: addNewTask
   });

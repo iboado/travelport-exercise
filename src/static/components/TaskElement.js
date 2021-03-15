@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import useButton from "./genericButton";
+import GenericButton from "./GenericButton";
 import TasksContext from "../context/TasksContextProvider";
 
 const TaskElement = ({ description, id }) => {
@@ -8,7 +8,7 @@ const TaskElement = ({ description, id }) => {
     const newTaskList = tasks.filter(singleTask => singleTask.id !== id);
     updateTasks(newTaskList);
   };
-  const DeleteTaskButton = useButton({
+  const DeleteTaskButton = GenericButton({
     buttonText: "-",
     onClickFunction: deleteTask
   });
