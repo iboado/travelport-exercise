@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div>
       <TasksContextProvider>
-        <AddTaskForm></AddTaskForm>
-        <TasksContainer></TasksContainer>
+        <AddTaskForm />
+        <TasksContainer />
       </TasksContextProvider>
     </div>
   );

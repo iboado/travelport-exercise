@@ -11,7 +11,7 @@ const AddTaskForm = () => {
     setUniqueId(uniqueId + 1);
     const uniqueIdTag = `task-el-${uniqueId}`;
     const newTaskModel = { id: uniqueIdTag, description };
-
+    console.log("tipo", typeof tasks);
     updateTasks([...tasks, newTaskModel]);
   };
   const AddTaskButton = GenericButton({
@@ -21,9 +21,10 @@ const AddTaskForm = () => {
   });
 
   return (
-    <div>
-      <label htmlFor="inputText">
+    <div data-testid="add-task-form">
+      <label htmlFor="input-text">
         <input
+          id="input-text"
           placeholder="Add a new task!"
           value={description}
           onChange={e => setDescription(e.target.value)}
